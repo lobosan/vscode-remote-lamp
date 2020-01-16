@@ -6,6 +6,12 @@
   "workspaceFolder": "/var/www/html",
   // Comment out if you want to use root
   "remoteUser": "vscode",
+  "extensions": [
+    "felixfbecker.php-debug",
+    "bmewburn.vscode-intelephense-client",
+    "junstyle.php-cs-fixer",
+    "zhuangtongfa.material-theme"
+  ],
   // Use 'settings' to set *default* container specific settings.json values on container create.
   // You can edit these settings after create using File > Preferences > Settings > Remote.
   "settings": {
@@ -24,11 +30,5 @@
     },
     "terminal.integrated.shell.linux": "/bin/bash",
     "workbench.colorTheme": "One Dark Pro"
-  },
-  "extensions": [
-    "felixfbecker.php-debug",
-    "bmewburn.vscode-intelephense-client",
-    "junstyle.php-cs-fixer",
-    "zhuangtongfa.material-theme"
-  ]
+  }
 }

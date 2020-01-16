@@ -1,6 +1,6 @@
 # LAMP stack built with Docker Compose
 
-This is a basic LAMP stack environment built using Docker Compose. It consists following:
+This is a basic LAMP stack environment built using Docker Compose that consists of the following software:
 
 * PHP 7.4
 * Apache 2.4
@@ -11,7 +11,7 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 
 ```shell
 git clone https://github.com/lobosan/vscode-remote-lamp.git
-cd docker-compose-lamp/
+cd vscode-remote-lamp/
 cp sample.env .env
 ```
 
@@ -22,8 +22,12 @@ Install Visual Studio Code and also add the extensions
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
 
+This project contains a .devcontainer.json configuration file, so once the prompt appears, click on `Reopen in container` button to start building the docker images and develop in the container.
 
-Your LAMP stack is now ready!! You can access it via `http://localhost`.
+> To learn more go to https://code.visualstudio.com/docs/remote/containers
+
+Once the building process is finished, your LAMP stack is ready!!
+You can access it via `http://localhost`.
 
 ## Configuration Variables
 
@@ -62,8 +66,8 @@ By default following modules are enabled.
 * rewrite
 * headers
 
-> If you want to enable more modules, just update `./bin/webserver/Dockerfile`. You can also generate a PR and we will merge if seems good for general purpose.
-> You have to rebuild the docker image by running `docker-compose build` and restart the docker containers.
+> If you want to enable more modules, just update `./bin/webserver/Dockerfile`.
+> You have to rebuild the docker image and restart the docker containers.
 
 #### Connect via SSH
 
@@ -90,8 +94,8 @@ By default following extensions are installed.
 * xmlrpc
 * gd
 
-> If you want to install more extension, just update `./bin/webserver/Dockerfile`. You can also generate a PR and we will merge if seems good for general purpose.
-> You have to rebuild the docker image by running `docker-compose build` and restart the docker containers.
+> If you want to install more extension, just update `./bin/webserver/Dockerfile`.
+> You have to rebuild the docker image and restart the docker containers.
 
 ## phpMyAdmin
 
