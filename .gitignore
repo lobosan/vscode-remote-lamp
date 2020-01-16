@@ -1,0 +1,7 @@
+/.env
+/.vscode
+/data/*
+/logs/*
+/www/composer.lock
+/www/vendor
+.DS_Store
