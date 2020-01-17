@@ -96,39 +96,47 @@ Verify that you can run docker commands without sudo.
 $ docker run hello-world
 ```
 
-## Clone repository and setup environment variables as needed
+> To learn more about `Docker installation`, go to https://docs.docker.com/install/linux/docker-ce/ubuntu/ and https://docs.docker.com/install/linux/linux-postinstall/
 
-```shell
-git clone https://github.com/lobosan/vscode-remote-lamp.git
-cd vscode-remote-lamp/
-cp sample.env .env
-```
+### Install and setup VSCode
 
-
-## Install and setup VSCode
-
-Install Visual Studio Code and also add the following extensions:
+Download `.deb` version from `https://code.visualstudio.com/`, install it, open it and add the following extensions:
 
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
 
+### Clone repository and setup environment variables as needed
 
-## Reopen folder in container
+Open a terminal and run the following commands:
 
-After installing the extension `Remote Containers`, the configuration file .devcontainer.json will be recognized and once the prompt appears, click on the blue button `Reopen in container` to start building the docker images.
+```shell
+$ mkdir Code
+$ cd Code
+$ git clone https://github.com/lobosan/vscode-remote-lamp.git
+$ cd vscode-remote-lamp/
+$ cp sample.env .env
+$ code .
+```
+
+
+## Developing in the Remote Container
+
+Once Visual Studio Code opens our project, the configuration file `.devcontainer.json` will be recognized and a notification should appear on the lower right corner. Click on the blue button `Reopen in container` to start building the docker images.
 
 Alternatively, click on the green icon `><` on the lower left corner and select the command `Remote-Containers:Reopen in Container`
 
 > To learn more about `Remote Containers`, go to https://code.visualstudio.com/docs/remote/containers
 
 
-## Install composer dependencies
+### Install composer dependencies
+
+Once the building process finishes successfuly, open a terminal in Visual Studio Code with the command ``CTRL+SHIFT+` `` and run:
 
 ```shell
-composer install
+$ composer install
 ```
 
-Once the process is finished, your LAMP stack is ready to be used as your PHP development environmet.
+After the process is finished, your LAMP stack is ready to be used as your PHP development environment.
 You can access it via `http://localhost`.
 
 
