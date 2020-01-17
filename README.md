@@ -83,27 +83,6 @@ $ docker --version
 Docker version 19.03.5, build 633a0ea838
 ```
 
-### Install Docker Compose 1.25
-
-Run this command to download the current stable release of Docker Compose:
-
-```shell
-$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-```
-
-Apply executable permissions to the binary:
-
-```shell
-$ sudo chmod +x /usr/local/bin/docker-compose
-```
-
-Test the installation.
-
-```shell
-$ docker-compose --version
-docker-compose version 1.25.0, build 1110ad01
-```
-
 ### Manage Docker as a non-root user
 
 Add your user to the docker group created during installation.
@@ -125,6 +104,27 @@ $ docker run hello-world
 ```
 
 > To learn more about how to install Docker, go to https://docs.docker.com/install/linux/docker-ce/ubuntu/ and https://docs.docker.com/install/linux/linux-postinstall/
+
+### Install Docker Compose 1.25
+
+Run this command to download the current stable release of Docker Compose:
+
+```shell
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+Apply executable permissions to the binary:
+
+```shell
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Test the installation.
+
+```shell
+$ docker-compose --version
+docker-compose version 1.25.0, build 1110ad01
+```
 
 ### Install and setup VSCode
 
