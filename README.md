@@ -1,4 +1,4 @@
-# VSCODE REMOTE DOCKER CONTAINER - Linux Apache MySQL + PhpMyAdmin + ComposeR
+# VSCode Remote Docker Container - LAMP Stack
 
 
 ## Introduction
