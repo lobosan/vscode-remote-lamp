@@ -13,6 +13,70 @@ This platform is built using a `.devcontainer.json` which uses a `docker-compose
 * Composer 1.9
 
 
+## Prerequisites
+
+This tutorial assumes you are running `Ubuntu 18.04 LTS x86_64`. To start developing remote containers, you need to install Docker locally following the next steps:
+
+### Set up the Docker repository
+
+Update the apt package index.
+
+```shell
+$ sudo apt-get update
+```
+
+Install packages to allow apt to use a repository over HTTPS:
+
+```shell
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+```
+
+Add Docker’s official GPG key:
+
+```shell
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+Verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint.
+
+```shell
+$ sudo apt-key fingerprint 0EBFCD88
+    
+pub   rsa4096 2017-02-22 [SCEA]
+      9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
+sub   rsa4096 2017-02-22 [S]
+```
+
+Use the following command to set up the stable repository.
+
+```shell
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+
+### Install Docker Engine - Community
+
+Update the apt package index.
+
+```shell
+$ sudo apt-get update
+```
+
+Install the latest version of Docker Engine - Community and containerd, or go to the next step to install a specific version:
+
+```shell
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+
 ## Clone repository and setup environment variables as needed
 
 ```shell
