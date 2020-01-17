@@ -76,6 +76,25 @@ Install the latest version of Docker Engine - Community and containerd, or go to
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
+### Manage Docker as a non-root user
+
+Add your user to the docker group created during installation.
+
+```shell
+$ sudo usermod -aG docker $USER
+```
+
+Activate the changes to groups.
+
+```shell
+$ newgrp docker
+```
+
+Verify that you can run docker commands without sudo.
+
+```shell
+$ docker run hello-world
+```
 
 ## Clone repository and setup environment variables as needed
 
