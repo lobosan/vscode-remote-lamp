@@ -121,7 +121,6 @@ $ code .
 > Setup your environment variables as needed in your .env file.
 
 
-
 ## Developing in the Remote Container
 
 Once Visual Studio Code opens our project, the configuration file `.devcontainer.json` will be recognized and a notification should appear on the lower right corner. Click on the blue button `Reopen in container` to start building the docker images.
