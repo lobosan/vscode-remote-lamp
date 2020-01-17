@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This platform, it is built using a `.devcontainer.json` which uses a `docker-compose.yml` file that consists of the following software:
+This platform is built using a `.devcontainer.json` which uses a `docker-compose.yml` file that consists of the following software:
 
-* Linux Debian 10.0
+* Linux Debian 10.2
 * PHP 7.4
 * Apache 2.4
 * MySQL 8.0
