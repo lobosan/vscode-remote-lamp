@@ -171,7 +171,7 @@ $ composer install
 ```
 
 After the process is finished, your LAMP stack is ready to be used as your PHP development environment.
-You can access it via `http://localhost`.
+You can access it via http://localhost.
 
 
 ## Configuration Variables
