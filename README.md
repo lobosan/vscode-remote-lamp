@@ -100,7 +100,7 @@ $ docker run hello-world
 
 ### Install and setup VSCode
 
-Download `.deb` version from `https://code.visualstudio.com/`, install it, open it and add the following extensions:
+Download `.deb` version of VSCode from `https://code.visualstudio.com/`, install it, open it and add the following extensions:
 
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
