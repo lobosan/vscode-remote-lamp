@@ -113,7 +113,7 @@ Open a terminal and run the following commands:
 $ mkdir Code
 $ cd Code
 $ git clone https://github.com/lobosan/vscode-remote-lamp.git
-$ cd vscode-remote-lamp/
+$ cd vscode-remote-lamp
 $ cp sample.env .env
 $ code .
 ```
