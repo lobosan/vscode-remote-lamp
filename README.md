@@ -105,7 +105,7 @@ Download `.deb` version of VSCode from `https://code.visualstudio.com/`, install
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
 
-### Clone repository and setup environment variables as needed
+### Clone repository
 
 Open a terminal and run the following commands:
 
@@ -117,6 +117,8 @@ $ cd vscode-remote-lamp/
 $ cp sample.env .env
 $ code .
 ```
+
+> Setup your environment variables as needed in your .env file.
 
 
 ## Developing in the Remote Container
