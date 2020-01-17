@@ -96,7 +96,7 @@ Verify that you can run docker commands without sudo.
 $ docker run hello-world
 ```
 
-> To learn more about `Docker installation`, go to https://docs.docker.com/install/linux/docker-ce/ubuntu/ and https://docs.docker.com/install/linux/linux-postinstall/
+> To learn more about how to install Docker, go to https://docs.docker.com/install/linux/docker-ce/ubuntu/ and https://docs.docker.com/install/linux/linux-postinstall/
 
 ### Install and setup VSCode
 
