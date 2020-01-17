@@ -164,7 +164,7 @@ After this, a new notification should appear, click on the `details` blue text t
 
 ### Install composer dependencies
 
-Once the building process finishes successfuly, open a terminal in Visual Studio Code with the command ``CTRL+SHIFT+` `` and run:
+Once the building process finishes successfuly, open a terminal in Visual Studio Code with the command ``Ctrl + Shift + ` `` and run:
 
 ```shell
 $ composer install
