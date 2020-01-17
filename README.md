@@ -105,6 +105,8 @@ Download `.deb` version of VSCode from `https://code.visualstudio.com/`, install
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
 
+After installing the extensions, close Visual Studio Code.
+
 ### Clone repository
 
 Open a terminal and run the following commands:
