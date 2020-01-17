@@ -62,7 +62,7 @@ $ sudo add-apt-repository \
    stable"
 ```
 
-### Install Docker Engine - Community
+### Install Docker Engine - Community 19.03
 
 Update the apt package index.
 
@@ -74,6 +74,34 @@ Install the latest version of Docker Engine - Community and containerd, or go to
 
 ```shell
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+Test the installation
+
+```shell
+$ docker --version
+Docker version 19.03.5, build 633a0ea838
+```
+
+### Install Docker Compose 1.25
+
+Run this command to download the current stable release of Docker Compose:
+
+```shell
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+Apply executable permissions to the binary:
+
+```shell
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Test the installation.
+
+```shell
+$ docker-compose --version
+docker-compose version 1.25.0, build 1110ad01
 ```
 
 ### Manage Docker as a non-root user
@@ -128,6 +156,8 @@ $ code .
 Once Visual Studio Code opens our project, the configuration file `.devcontainer.json` will be recognized and a notification should appear on the lower right corner. Click on the blue button `Reopen in container` to start building the docker images.
 
 Alternatively, click on the green icon `><` on the lower left corner and select the command `Remote-Containers:Reopen in Container`
+
+After this, a new notification should appear, click on the `details` blue text to see the building process.
 
 > To learn more about `Remote Containers`, go to https://code.visualstudio.com/docs/remote/containers
 
