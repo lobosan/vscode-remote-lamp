@@ -161,7 +161,7 @@ Alternatively, click on the green icon `><` on the lower left corner and select 
 
 After this, a new notification should appear, click on the `details` blue text to see the building process.
 
-> To learn more about `Remote Containers`, go to https://code.visualstudio.com/docs/remote/containers
+> To learn more about Remote Containers, go to https://code.visualstudio.com/docs/remote/containers
 
 
 ### Install composer dependencies
