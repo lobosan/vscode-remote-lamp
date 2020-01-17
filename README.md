@@ -126,6 +126,8 @@ $ docker-compose --version
 docker-compose version 1.25.0, build 1110ad01
 ```
 
+> To learn more about how to install Docker Compose, go to https://docs.docker.com/compose/install/
+
 ### Install and setup VSCode
 
 Download `.deb` version of VSCode from `https://code.visualstudio.com/`, install it, open it and add the following extensions:
