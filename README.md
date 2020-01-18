@@ -130,12 +130,34 @@ docker-compose version 1.25.0, build 1110ad01
 
 ### Install and setup VSCode
 
-Download `.deb` version of VSCode from https://code.visualstudio.com/, install it, open it and add the following extensions:
+Download the `.deb` version of VSCode from https://code.visualstudio.com/, install it, open it and add the following extensions:
 
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
 
-After installing the extensions, close Visual Studio Code.
+After installing the extensions, type `Ctrl + Shift + p`, run the command `Preferences: Open Settings (JSON)` and use the following settings:
+
+```shell
+{
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 25,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "explorer.autoReveal": false,
+  "explorer.openEditors.visible": 0,
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "window.menuBarVisibility": "toggle",
+  "window.title": "${rootName}",
+  "window.zoomLevel": 0.7,
+  "workbench.editor.enablePreview": false,
+  "zenMode.hideTabs": false
+}
+```
+
+close Visual Studio Code.
 
 ### Clone repository
 
