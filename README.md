@@ -157,7 +157,7 @@ After installing the extensions, type `Ctrl + Shift + p`, run the command `Prefe
 }
 ```
 
-close Visual Studio Code.
+After saving the changes, close Visual Studio Code.
 
 ### Clone repository
 
