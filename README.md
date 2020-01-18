@@ -130,7 +130,7 @@ docker-compose version 1.25.0, build 1110ad01
 
 ### Install and setup VSCode
 
-Download `.deb` version of VSCode from `https://code.visualstudio.com/`, install it, open it and add the following extensions:
+Download `.deb` version of VSCode from https://code.visualstudio.com/, install it, open it and add the following extensions:
 
 * ms-azuretools.vscode-docker
 * ms-vscode-remote.remote-containers
