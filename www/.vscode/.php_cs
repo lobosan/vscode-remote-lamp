@@ -47,8 +47,8 @@ return PhpCsFixer\Config::create()
     'elseif' => true,
     'encoding' => true,
     'escape_implicit_backslashes' => true,
-    'explicit_indirect_variable' => true,
-    'explicit_string_variable' => true,
+    'explicit_indirect_variable' => false,
+    'explicit_string_variable' => false,
     'full_opening_tag' => true,
     'fully_qualified_strict_types' => true,
     'function_declaration' => true,
@@ -186,7 +186,7 @@ return PhpCsFixer\Config::create()
     'unary_operator_spaces' => true,
     'visibility_required' => true,
     'whitespace_after_comma_in_array' => true,
-    'yoda_style' => true,
+    'yoda_style' => false,
   ])
   ->setFinder(PhpCsFixer\Finder::create()
     ->exclude('vendor')
