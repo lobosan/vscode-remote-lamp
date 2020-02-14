@@ -55,7 +55,7 @@ return PhpCsFixer\Config::create()
     'function_typehint_space' => true,
     'heredoc_to_nowdoc' => true,
     'include' => true,
-    'increment_style' => true,
+    'increment_style' => ['style' => 'post'],
     'indentation_type' => true,
     'line_ending' => true,
     'lowercase_cast' => true,
