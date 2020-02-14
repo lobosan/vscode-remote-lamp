@@ -20,7 +20,7 @@ services:
       APACHE_RUN_USER: ${APACHE_RUN_USER}
   mysql:
     build:
-      context: "./bin/${DATABASE}"
+      context: "./bin/mysql8"
     container_name: 'mysql'
     restart: 'no'
     ports:
