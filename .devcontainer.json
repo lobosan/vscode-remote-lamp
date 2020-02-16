@@ -1,5 +1,5 @@
 {
-  "name": "PHP Ecommerce",
+  "name": "PHP & MySQL",
   "dockerComposeFile": "./docker-compose.yml",
   "service": "webserver",
   // Default path to open when attaching to a new container.
